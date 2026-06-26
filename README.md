@@ -1,5 +1,7 @@
 
 # Intactly
+
+![Intactly Banner](bannerfs.png)
 ### Structural intelligence powered by AI
 
 Intactly is an AI-powered infrastructure inspection system that detects structural cracks in concrete surfaces, visualises damage using Grad-CAM interpretability, and generates severity scores with maintenance recommendations. Built with PyTorch, ResNet-50, and Streamlit.
