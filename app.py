@@ -68,8 +68,9 @@ def calculate_severity(grayscale_cam, predicted):
     mean_activation = grayscale_cam.mean()
     max_activation = grayscale_cam.max()
     raw_score = (mean_activation * 0.7 + max_activation * 0.3)
-    severity = min(10, max(1, round(raw_score * 12)))
+    # Scale severity based on crack coverage percentage
     crack_percentage = (grayscale_cam > 0.25).mean() * 100
+    severity = min(10, max(1, round(crack_percentage / 6)))
     if severity <= 3:
         rec = "Minor surface crack detected. Routine monitoring is advised — schedule a visual inspection every 30 days and reassess if any progression is observed."
     elif severity <= 6:
