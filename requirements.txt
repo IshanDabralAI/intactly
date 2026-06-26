@@ -1,6 +1,7 @@
 torch
 torchvision
 grad-cam
+opencv-python-headless
 gdown
 streamlit
 numpy
