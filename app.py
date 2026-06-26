@@ -26,7 +26,6 @@ if not os.path.exists('crack_model.pth'):
 # Page configuration
 st.set_page_config(
     page_title="Intactly",
-    page_icon="🏗️",
     layout="wide"
 )
 
