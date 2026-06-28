@@ -49,6 +49,23 @@ Severity is calculated from the Grad-CAM activation map — the percentage of th
 
 ---
 
+## Potential Applications
+
+Intactly in its current form is a proof of concept trained on close-up concrete surface images. The underlying approach — CNN-based detection combined with Grad-CAM interpretability and severity scoring — could extend toward:
+
+**Civil Infrastructure**
+Routine monitoring of concrete bridges, dams, and tunnels. Early crack detection prevents catastrophic structural failures and reduces the cost of reactive repairs.
+
+**Pavement & Roads**
+Automated road surface surveys using vehicle-mounted cameras to detect potholes and cracking patterns, reducing traffic disruptions and maintenance costs.
+
+**Manufacturing & Quality Control**
+Real-time scanning of manufactured parts and metal surfaces to identify imperfections before products leave the factory floor.
+
+Scaling to these domains would require more diverse training data and likely more robust architectures — but the core pipeline would remain the same.
+
+---
+
 ## Tech stack
 
 | Tool | Purpose |
